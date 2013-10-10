@@ -1,8 +1,8 @@
 <classpath>
-  <classpathentry output="target\scala-2.9.2\classes" path="src\main\scala" kind="src"></classpathentry>
-  <classpathentry output="target\scala-2.9.2\classes" path="src\main\java" kind="src"></classpathentry>
-  <classpathentry output="target\scala-2.9.2\test-classes" path="src\test\scala" kind="src"></classpathentry>
-  <classpathentry output="target\scala-2.9.2\test-classes" path="src\test\java" kind="src"></classpathentry>
+  <classpathentry output="target\scala-2.10\classes" path="src\main\scala" kind="src"></classpathentry>
+  <classpathentry output="target\scala-2.10\classes" path="src\main\java" kind="src"></classpathentry>
+  <classpathentry output="target\scala-2.10\test-classes" path="src\test\scala" kind="src"></classpathentry>
+  <classpathentry output="target\scala-2.10\test-classes" path="src\test\java" kind="src"></classpathentry>
   <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"></classpathentry>
   <classpathentry path="C:\Users\Phil\.ivy2\cache\com.twitter\finagle-core\jars\finagle-core-1.9.0.jar" kind="lib"></classpathentry>
   <classpathentry path="C:\Users\Phil\.ivy2\cache\com.twitter\util-hashing\jars\util-hashing-1.11.4.jar" kind="lib"></classpathentry>
@@ -14,6 +14,28 @@
   <classpathentry path="C:\Users\Phil\.ivy2\cache\com.twitter\finagle-http\jars\finagle-http-1.9.0.jar" kind="lib"></classpathentry>
   <classpathentry path="C:\Users\Phil\.ivy2\cache\com.twitter\util-logging\jars\util-logging-1.11.4.jar" kind="lib"></classpathentry>
   <classpathentry path="C:\Users\Phil\.ivy2\cache\commons-lang\commons-lang\jars\commons-lang-2.6.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\org.autotdd\engine_2.10\jars\engine_2.10-1.1.0.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\org.autotdd\constraint_2.10\jars\constraint_2.10-1.1.0.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\org.scalaj\scalaj-time_2.10.2\jars\scalaj-time_2.10.2-0.7.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.2.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.2.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\org.hsqldb\hsqldb\jars\hsqldb-2.0.0.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\mysql\mysql-connector-java\jars\mysql-connector-java-5.1.6.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\commons-dbcp\commons-dbcp\jars\commons-dbcp-1.2.2.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\commons-pool\commons-pool\jars\commons-pool-1.3.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\org.springframework\spring-jdbc\jars\spring-jdbc-3.2.3.RELEASE.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-3.2.3.RELEASE.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\org.springframework\spring-core\jars\spring-core-3.2.3.RELEASE.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\org.springframework\spring-tx\jars\spring-tx-3.2.3.RELEASE.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\org.scala-stm\scala-stm_2.10\jars\scala-stm_2.10-0.7.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.10.1.jar" kind="lib"></classpathentry>
+  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_COMPILER_CONTAINER"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\org.scalatest\scalatest_2.10\jars\scalatest_2.10-1.9.1.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\org.scala-lang\scala-actors\jars\scala-actors-2.10.0.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\log4j\log4j\bundles\log4j-1.2.17.jar" kind="lib"></classpathentry>
+  <classpathentry path="C:\Users\Phil\.ivy2\cache\junit\junit\jars\junit-4.8.2.jar" kind="lib"></classpathentry>
   <classpathentry path="org.eclipse.jdt.launching.JRE_CONTAINER" kind="con"></classpathentry>
   <classpathentry path="bin" kind="output"></classpathentry>
 </classpath>
