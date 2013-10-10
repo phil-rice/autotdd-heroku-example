@@ -10,7 +10,7 @@ import com.sun.jersey.spi.container.servlet.ServletContainer
 object WebServer {
 
   def launch(s: String*) {
-    val server = new Server(8080)
+    val server = new Server(80)
     val connector = new SelectChannelConnector()
     server.addConnector(connector)
 
