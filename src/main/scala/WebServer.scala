@@ -7,10 +7,10 @@ import org.eclipse.jetty.server.Server
 import com.sun.jersey.spi.container.servlet.ServletContainer
 import com.sun.jersey.spi.container.servlet.ServletContainer
 
-object WebServer {
+object Web {
 
   def launch(s: String*) {
-    val server = new Server(80)
+    val server = new Server(System.getenv("PORT").toInt)
     val connector = new SelectChannelConnector()
     server.addConnector(connector)
 
