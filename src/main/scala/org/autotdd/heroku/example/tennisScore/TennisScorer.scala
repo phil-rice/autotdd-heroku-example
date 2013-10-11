@@ -1,4 +1,4 @@
-package org.autotdd.example.tennisScore
+package org.autotdd.heroku.example.tennisScore
 
 import org.autotdd.engine.Engine
 import org.junit.runner.RunWith
