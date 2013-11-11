@@ -6,24 +6,11 @@ import org.eclipse.jetty.server.nio.SelectChannelConnector
 import org.eclipse.jetty.server.Server
 import com.sun.jersey.spi.container.servlet.ServletContainer
 import com.sun.jersey.spi.container.servlet.ServletContainer
+import org.corecdd.website.WebServer
 
 object Web {
 
-  def launch(s: String*) {
-    val server = new Server(System.getenv("PORT").toInt)
-    val connector = new SelectChannelConnector()
-    server.addConnector(connector)
-
-    val holder: ServletHolder = new ServletHolder(classOf[ServletContainer])
-    holder.setInitParameter("com.sun.jersey.config.property.resourceConfigClass", "com.sun.jersey.api.core.PackagesResourceConfig")
-    holder.setInitParameter("com.sun.jersey.config.property.packages", s.mkString(";"))
-    val context = new ServletContextHandler(server, "/", ServletContextHandler.SESSIONS)
-    context.addServlet(holder, "/*")
-    server.start
-    server.join
-  }
-
   def main(args: Array[String]) {
-    launch("org.autotdd.example.tennisScore")
+    WebServer("org.cddcore.heroku.example").launch
   }
 }

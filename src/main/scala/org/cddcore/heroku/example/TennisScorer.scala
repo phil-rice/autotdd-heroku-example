@@ -1,9 +1,10 @@
-package org.autotdd.heroku.example.tennisScore
+package org.cddcore.heroku.example
 
-import org.autotdd.engine.Engine
+
 import org.junit.runner.RunWith
 import javax.ws.rs._
-import org.autotdd.engine.tests._
+import org.cddcore.engine.tests.CddRunner
+import org.cddcore.engine.Engine
 
 case class Score(item: String)
 object Score {
@@ -19,7 +20,7 @@ object Score {
   val lost = Score("lost")
 }
 
-@RunWith(classOf[AutoTddJunitRunner])
+@RunWith(classOf[CddRunner])
 object TennisScorer {
   import Score._
   val lookup = Map(0 -> love, 1 -> s15, 2 -> s30, 3 -> s40)
@@ -29,7 +30,6 @@ object TennisScorer {
 
   val scorer = Engine[Int, Int, String]().
 //    withDescription("Tennis Kata specified by http://codingdojo.org/cgi-bin/wiki.pl?KataTennis").
-    withDefaultCode((l: Int, r: Int) => "error").
     useCase("A game is won by the first player to have won at least four points in total and at least two points more than the opponent.").
     scenario(4, 0).expected(leftWon).because((l: Int, r: Int) => (l - r) >= 2 && l >= 4).
     scenario(4, 1).expected(leftWon).
@@ -68,7 +68,7 @@ object TennisScorer {
 }
 
 object TennisResource {
-  final val path = "/tennis"
+  final val path = "/"
   final val formUrlEncoded = "application/x-www-form-urlencoded"
 }
 
@@ -84,7 +84,6 @@ class TennisResource() {
       case "Left" => html(leftScore + 1, rightScore)
       case "Right" => html(leftScore, rightScore + 1)
     }
-    //    println(s"Left: ${leftScore}/${score} Right ${rightScore}")
   }
 
   def html(leftScore: Int, rightScore: Int) =
