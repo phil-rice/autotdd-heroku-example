@@ -1,6 +1,5 @@
 package org.cddcore.heroku.example
 
-
 import org.junit.runner.RunWith
 
 import org.cddcore.engine.tests.CddRunner
@@ -32,7 +31,10 @@ object TennisScorer {
   val rightWon = "right won"
 
   val scorer = Engine[Int, Int, String]().
-//    withDescription("Tennis Kata specified by http://codingdojo.org/cgi-bin/wiki.pl?KataTennis").
+    param((s: String) => s.toInt, "Left").
+    param((s: String) => s.toInt, "Right").
+
+    //    withDescription("Tennis Kata specified by http://codingdojo.org/cgi-bin/wiki.pl?KataTennis").
     useCase("A game is won by the first player to have won at least four points in total and at least two points more than the opponent.").
     scenario(4, 0).expected(leftWon).because((l: Int, r: Int) => (l - r) >= 2 && l >= 4).
     scenario(4, 1).expected(leftWon).
